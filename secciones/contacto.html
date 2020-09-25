@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contacto</title>
+        <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../estilos/estilos.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <div id="arriba">
+                    <a href="../Index.html"><h1>Guia del viajero: Nueva Zelanda</h1></a>
+                </div>
+                <ul>
+                    <li><a href="../index.html" class="main">Inicio</a></li>
+                    <li><a href="auckland.html" class="main">Destinos</a>
+                        <ul id="submenu">
+                            <li><a href="auckland.html">Auckland</a></li>
+                            <li><a href="bop.html">Bay of Plenty</a</li>
+                            <li><a href="hobb.html">Hobbitton</a></li>
+                            <li><a href="rotorua.html">Rotorua</a></li>
+                            <li><a href="wellington.html">Wellington</a></li>
+                            <li><a href="cc.html">Christchurch</a></li>
+                            <li><a href="fiordland.html">Fiordland</a></li>
+                            <li><a href="nelson.html">Nelson Tasman</a></li>
+                            <li><a href="qt.html">Queenstown</a></li>
+                        </ul>
+                    </li>    
+                    <li><a href="itinerarios.html" class="main">Itinerarios</a></li>
+                </ul>
+            </nav>
+        </header>
+        <form action="#">
+            <div class="f1">
+                <label for="fname">Nombre</label>
+                <input type="text" name="Nombre" id="fname" required>
+            <div>   
+                <label for="lname">Apellido</label>
+                <input type="text" name="Nombre" id="lname" required>
+            </div>
+            <div> 
+                <label for="mail">E-mail</label>
+                <input type="email" name="E-mail" id="mail" required>
+            </div>    
+                <label for="estciv">Estado Civil</label>
+                <select name="estcivil" id="estcivil">
+                    <option value="sol">Soltero/a</option>
+                    <option value="cas">Casado/a</option>
+                    <option value="div">Divorciado/a</option>
+                    <option value="viu">Viudo/a</option>
+                </select>
+            </div>
+                <textarea placeholder="Comentarios" cols="30" rows="10" id="Comentarios" required></textarea>
+            </div>
+            <div> 
+                <input type="reset" value="Limpiar formulario">
+            </div>   
+            <div>
+                <input type="submit" value="Enviar">
+            </div>
+            <div>
+                <label for="nl">¿Desea recibir el newsletter?</label>
+                <input type="checkbox" name="acepta" value="1" id="nl">
+            </div>
+        </form>
+        <footer>
+            <nav>
+                <ul>
+                    <li><a href="acercade.html">Acerca de</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </footer>
+    </body>
+</html>
