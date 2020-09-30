@@ -164,9 +164,9 @@ nav ul li:hover #submenu li{
 /* contacto */
 
 form {
-    margin: 50px;
+    margin-top: 150px;
     padding: 40px;
-    line-height: 2rem;
+    line-height: 4rem;
     text-align: center;
 }
 
@@ -225,4 +225,8 @@ form {
 
 .main {
     transition: 0.7s;
+}
+
+.fc1 {
+   width: 50%;
 }
