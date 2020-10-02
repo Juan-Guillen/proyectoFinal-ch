@@ -4,13 +4,14 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Auckland</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
-        <link rel="stylesheet" type="text/css" href="../estilos/estilos.css">
+        <link rel="stylesheet" type="text/css" href="../css/main.css">
     </head>
     <body>
         <header>
-            <nav>
+            <nav class="nav_main">
                 <div id="arriba">
                     <a href="../Index.html"><h1>Guia del viajero: Nueva Zelanda</h1></a>
                 </div>
@@ -32,6 +33,23 @@
                     <li><a href="itinerarios.html" class="main">Itinerarios</a></li>
                 </ul>
             </nav>
+            <div class="nav_mobile">
+                <label for="toggler">&#9776</label>
+                <input type="checkbox" id="toggler">
+                <div class="nav_menu">
+                    <a href="../index.html">Inicio</a>
+                    <a href="../secciones/auckland.html">Auckland</a>
+                    <a href="../secciones/bop.html">Bay of Plenty</a>
+                    <a href="../secciones/hobb.html">Hobbitton</a>
+                    <a href="../secciones/rotorua.html">Rotorua</a>
+                    <a href="../secciones/wellington.html">Wellington</a>
+                    <a href="../secciones/cc.html">Christchurch</a>
+                    <a href="../secciones/fiordland.html">Fiordland</a>
+                    <a href="../secciones/nelson.html">Nelson Tasman</a>
+                    <a href="../secciones/qt.html">Queenstown</a>
+                    <a href="../secciones/itinerarios.html">Itinerarios</a>
+                </div>
+            </div>
         </header>
             <h2>Auckland</h2>
             <section class="grid_parent">
@@ -65,6 +83,114 @@
                     <img src="../imagenes/isla_norte/auckland/c2.jpg" class="img" alt="arenas negras">
                     <img src="../imagenes/isla_norte/auckland/c3.jpg" class="img" alt="playas doradas">
             </section> 
+            <div class="container">
+                <div class="row">
+                    <article class="col-10 mx-auto m-3">
+                        Situada en la isla norte, su zona metropolitana se llama Greater Auckland, la más grande de la nación y el mayor foco de población en el Pacífico Sur. 
+                        Con más de 1,2 millones de inquilinos, más de un cuarto de la población del país y un mayor desarrollo que lo que queda del estado. 
+                        A pesar del hecho de que Wellington es la capital de Nueva Zelanda, Auckland es la ciudad más poblada y a decir verdad la capital 
+                        financiera de la nación.
+                    </article>   
+                </div>
+                <div class="row mx-auto">
+                    <div id="Auckland" class="carousel slide col-12" data-ride="carousel" data-interval="4000" data-pause="hover" data-keyboard="true">
+                        <ul class="carousel-indicators">
+                            <li data-target="#Auckland" data-slide-to="0" class="active"></li>
+                            <li data-target="#Auckland" data-slide-to="1"></li>
+                            <li data-target="#Auckland" data-slide-to="2"></li>
+                        </ul>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                            <img src="../imagenes/isla_norte/auckland/b1.jpg" alt="puerto_dia">
+                            </div>
+                            <div class="carousel-item">
+                            <img src="../imagenes/isla_norte/auckland/b3.jpg" alt="ciudad_atardecer">
+                            </div>
+                            <div class="carousel-item">
+                            <img src="../imagenes/isla_norte/auckland/b4.jpg" alt="marina">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#Auckland" role="button" data-slide="prev">
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#Auckland" role="button" data-slide="next">
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div> 
+            <div class="container">
+                <div class="row">
+                    <article class="col-10 mx-auto m-3">
+                        Auckland es un paraíso para los adictos a las compras, con todas las opciones desde diseñadores exclusivos hasta mercados al aire 
+                        libre. Descubrí la diversa gama de cafés y restaurantes que ofrecen gastronomía de alrededor del mundo y la vibrante vida nocturna                         del centro de la ciudad. Algunos de los lugares preferidos son las zonas 
+                        de Wynyard Quarter, Viaduct Harbour, Britomart y City Works Depot.
+                        Finalmente podés ir a alguna de las hermosas regiones vitivinícolas de Auckland.
+                    </article>
+                </div>
+                <div class="row">
+                    <div id="Auckland2" class="carousel slide col-12" data-ride="carousel" data-interval="4000" data-pause="hover" data-keyboard="true">
+                        <ul class="carousel-indicators">
+                            <li data-target="#Auckland2" data-slide-to="0" class="active"></li>
+                            <li data-target="#Auckland2" data-slide-to="1"></li>
+                            <li data-target="#Auckland2" data-slide-to="2"></li>
+                        </ul>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                            <img src="../imagenes/isla_norte/auckland/a1.jpg" alt="Britomart">
+                            </div>
+                            <div class="carousel-item">
+                            <img src="../imagenes/isla_norte/auckland/a5.jpg" alt="Britomart2">
+                            </div>
+                            <div class="carousel-item">
+                            <img src="../imagenes/isla_norte/auckland/sailing.jpg" alt="market">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#Auckland2" role="button" data-slide="prev">
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#Auckland2" role="button" data-slide="next">
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>   
+            <div class="container">
+                <div class="row">           
+                    <article class="col-10 mx-auto m-3">
+                        Los diversos paisajes de Auckland ofrecen incontables oportunidades para meterte de lleno en la naturaleza. En el oeste, el bosque pluvial
+                        autóctono desciende por las colinas para encontrase con el mar en espectaculares playas de arena negra, mientras que las protegidas playas 
+                        de arena dorada del este están bordeadas con árboles pohutukawa que dan flores rojas. Al norte, las onduladas colinas de las tierras vitivinícolas
+                        se encuentran con deslumbrantes costas.
+                    </article>
+                </div>   
+                <div class="row">
+                    <div id="Auckland3" class="carousel slide col-12" data-ride="carousel" data-interval="4000" data-pause="hover" data-keyboard="true">
+                        <ul class="carousel-indicators">
+                            <li data-target="#Auckland3" data-slide-to="0" class="active"></li>
+                            <li data-target="#Auckland3" data-slide-to="1"></li>
+                            <li data-target="#Auckland3" data-slide-to="2"></li>
+                        </ul>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                            <img src="../imagenes/isla_norte/auckland/c1.jpg" alt="arbol">
+                            </div>
+                            <div class="carousel-item">
+                            <img src="../imagenes/isla_norte/auckland/c2.jpg" alt="playas negras">
+                            </div>
+                            <div class="carousel-item">
+                            <img src="../imagenes/isla_norte/auckland/c3.jpg" alt="playas doradas">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#Auckland3" role="button" data-slide="prev">
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#Auckland3" role="button" data-slide="next">
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>  
         <footer>
             <nav>
                 <ul>
@@ -73,5 +199,8 @@
                 </ul>
             </nav>
         </footer>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     </body>
 </html>

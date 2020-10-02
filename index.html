@@ -13,11 +13,11 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
         <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">  
-        <link rel="stylesheet" type="text/css" href="estilos/estilos.css">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
     </head>
     <body>
         <header>
-            <nav>
+            <nav class="nav_main">
                 <div id="arriba">
                     <a href="Index.html"><h1> Guia del viajero: Nueva Zelanda</h1></a>
                 </div>
@@ -26,7 +26,7 @@
                     <li><a href="#destinos" class="main">Destinos</a>
                         <ul id="submenu">
                             <li><a href="secciones/auckland.html">Auckland</a></li>
-                            <li><a href="secciones/bop.html">Bay of Plenty</a</li>
+                            <li><a href="secciones/bop.html">Bay of Plenty</a></li>
                             <li><a href="secciones/hobb.html">Hobbitton</a></li>
                             <li><a href="secciones/rotorua.html">Rotorua</a></li>
                             <li><a href="secciones/wellington.html">Wellington</a></li>
@@ -39,8 +39,25 @@
                     <li><a href="secciones/itinerarios.html" class="main">Itinerarios</a></li>
                 </ul>
             </nav>
+            <div class="nav_mobile">
+                <label for="toggler">&#9776</label>
+                <input type="checkbox" id="toggler">
+                <div class="nav_menu">
+                    <a href="index.html">Inicio</a>
+                    <a href="secciones/auckland.html">Auckland</a>
+                    <a href="secciones/bop.html">Bay of Plenty</a>
+                    <a href="secciones/hobb.html">Hobbitton</a>
+                    <a href="secciones/rotorua.html">Rotorua</a>
+                    <a href="secciones/wellington.html">Wellington</a>
+                    <a href="secciones/cc.html">Christchurch</a>
+                    <a href="secciones/fiordland.html">Fiordland</a>
+                    <a href="secciones/nelson.html">Nelson Tasman</a>
+                    <a href="secciones/qt.html">Queenstown</a>
+                    <a href="secciones/itinerarios.html">Itinerarios</a>
+                </div>
+            </div>
         </header>
-        <section class="wow animate__animated animate__slideInRight">
+        <section>
             <article class="intro">
                 Nueva Zelanda comprende de dos islas fundamentales, las islas Norte y 
                 Sur (Te Ika a Maui y Te wai pounamu en maorí e individualmente) y 
