@@ -4,6 +4,7 @@
     font-size: 1.1rem;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 
@@ -30,6 +31,7 @@ h1 {
     height: 230px;
     margin: auto;
     padding-top: 40px;
+    color: #fff;
 }
 
 h2 {
@@ -54,16 +56,15 @@ h2 {
 
 /* nav menu */
 
-nav {
+.nav_main {
     a {
     text-decoration: none;
     display: flex;
     justify-content: center;
     width: 100%;
-    padding-top: 10px;
     height: 60px;
     font-weight: bolder;
-    color: white;
+    color: #efefef;
     background-color: slategray;
     text-align: center;
     letter-spacing: 0.2rem;
@@ -74,18 +75,19 @@ nav ul {
     display: flex;
     margin: auto;
     list-style: none;
-    margin-top: 180px;
-
+    margin-top: 170px;
+    
     li {
         width: 100%;
         background: rgba(211, 211, 211, 0.185);
+        
 
         &:hover #submenu li {
             display: block;
         }
 
         a:hover {
-            background: lightgrey;
+            transition: .5s;
             color: crimson;
         }
     }
@@ -170,7 +172,7 @@ nav ul {
 /* contacto */
 
 form {
-    margin-top: 150px;
+    margin-top: 50px;
     padding: 40px;
     line-height: 4rem;
     text-align: center;
@@ -232,21 +234,53 @@ form {
     .container {
         display: none;
     }
+
+    .nav_footer {
+        
+        ul {
+            text-align: center;
+            margin: auto;
+            width: 100%;
+            height: auto;
+            align-items: center;
+            margin-top: 30px;
+            background-color: slategray;
+            li {
+                a {
+                    text-decoration: none;
+                    font-family: 'Tangerine', cursive;
+                    font-size: 2rem;
+                    color: #efefef;
+                }
+            }
+        }
+    }
+    .about {
+        width: auto;
+        margin-top: 80px;
+        margin-bottom: 300px;
+        p {
+            font-size: 2rem;
+            margin: 50px 0;
+           
+        }
+    }
 }
 
 @media (max-width: 900px) {
     
     body { 
-        background-image: url(../imagenes/bg.jpg);
+        background-image: url(../imagenes/bg2.png);
         background-size: cover;
 
         .container {
 
             text-align: center;
             article {
+                color: #efefef;
                 letter-spacing: .1px;
                 word-spacing: 2px;
-                font-size: .7rem;
+                font-size: .8rem;
             }
 
             .carousel {
@@ -257,7 +291,7 @@ form {
             margin-top: 30px;
             
             article {
-                color: #eee;
+                color: #efefef;
                 letter-spacing: .1px;
                 word-spacing: 2px;
                 font-size: .7rem;
@@ -271,9 +305,22 @@ form {
                 z-index: -1;
             }
         }
+
+        .about {
+            width: auto;
+            margin-top: 80px;
+            margin-bottom: 300px;
+            color: #eee;
+            p {
+                font-size: 2rem;
+                margin: 50px 0;
+               
+            }
+        }
     }
 
     .nav_mobile {
+
         border-bottom: 1px solid lightgrey;
         text-align: center;
         height: 70px;
@@ -306,7 +353,7 @@ form {
     
             a {
                 text-decoration: none;
-                color: gainsboro;
+                color: #efefef;
                 line-height: 40px;
                 z-index: 2;
             }
@@ -341,10 +388,26 @@ form {
         display: none;
     }
 
-    footer {
-        nav {
+    
+    .nav_footer {
         
-        opacity: .75;
+        ul {
+            text-align: center;
+            margin: auto;
+            width: 100%;
+            height: auto;
+            align-items: center;
+            margin-top: 30px;
+            background-color: slategray;
+            li {
+                a {
+                    text-decoration: none;
+                    font-family: 'Tangerine', cursive;
+                    font-size: 2rem;
+                    color: #efefef;
+                }
+            }
         }
     }
+    
 }
