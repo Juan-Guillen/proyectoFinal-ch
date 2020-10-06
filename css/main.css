@@ -8,7 +8,7 @@
 }
 
 body {
-  background-image: url(../imagenes/full-bloom.png);
+  background-image: url(../imagenes/textured_stripes.png);
   background-repeat: repeat;
   background-attachment: fixed;
 }
@@ -39,7 +39,6 @@ h2 {
   padding: 40px;
   letter-spacing: 10px;
   word-spacing: 10px;
-  background: linear-gradient(to bottom, #99ccff, #ff9999);
 }
 
 /* index */
@@ -159,8 +158,32 @@ nav ul li a:hover {
 form {
   margin-top: 50px;
   padding: 40px;
-  line-height: 4rem;
+  line-height: 3rem;
   text-align: center;
+}
+form .f1 {
+  width: 35%;
+  margin: auto;
+}
+form .f1 label {
+  display: block;
+}
+form .f1 input {
+  width: 80%;
+  min-width: 200px;
+}
+form .f1 input + input {
+  max-width: 200px;
+}
+form .f1 .btn {
+  max-width: 255px;
+  margin: auto;
+  display: block;
+}
+form textarea {
+  margin-top: 30px;
+  width: 80%;
+  min-width: 200px;
 }
 
 /*acerca de*/
@@ -208,7 +231,8 @@ form {
     display: none;
   }
 
-  .container {
+  .container,
+.container1 {
     display: none;
   }
 
@@ -243,17 +267,32 @@ form {
     background-image: url(../imagenes/bg2.png);
     background-size: cover;
   }
-  body .container {
+  body .container,
+body .container1 {
     text-align: center;
   }
-  body .container article {
+  body .container article,
+body .container1 article {
     color: #efefef;
     letter-spacing: 0.1px;
     word-spacing: 2px;
     font-size: 0.8rem;
   }
-  body .container .carousel {
+  body .container .carousel,
+body .container1 .carousel {
     z-index: 0;
+  }
+  body .container1 {
+    margin-top: 150px;
+  }
+  body .introbox {
+    margin: 140px 0 100px;
+  }
+  body .introbox .intro {
+    max-width: 60vw;
+    margin-top: 30px;
+    padding: 20px 0;
+    z-index: -1;
   }
   body section {
     margin-top: 30px;
@@ -264,20 +303,52 @@ form {
     word-spacing: 2px;
     font-size: 0.7rem;
   }
-  body section .intro {
-    max-width: 60vw;
-    margin-top: 30px;
-    z-index: -1;
-  }
   body .about {
     width: auto;
-    margin-top: 80px;
+    margin-top: 160px;
     margin-bottom: 300px;
     color: #eee;
   }
   body .about p {
     font-size: 2rem;
     margin: 50px 0;
+  }
+  body .it1 {
+    color: #efefef;
+    margin-top: 140px;
+    font-size: 0.6rem;
+    border-top: 1px solid lightgrey;
+    max-width: 80vw;
+  }
+  body form {
+    color: #efefef;
+    width: 100%;
+    margin: 90px auto;
+    line-height: 3rem;
+  }
+  body form .f1 {
+    width: 50%;
+    margin: auto;
+  }
+  body form .f1 label {
+    display: block;
+  }
+  body form .f1 input {
+    width: 80%;
+    min-width: 200px;
+  }
+  body form .f1 input + input {
+    max-width: 200px;
+  }
+  body form .f1 .btn {
+    max-width: 255px;
+    margin: auto;
+    display: block;
+  }
+  body form textarea {
+    margin-top: 30px;
+    width: 80%;
+    min-width: 200px;
   }
 
   .nav_mobile {
@@ -289,6 +360,7 @@ form {
   .nav_mobile label {
     cursor: pointer;
     font-size: 2rem;
+    color: #efefef;
   }
   .nav_mobile #toggler {
     display: none;
@@ -312,17 +384,20 @@ form {
     line-height: 40px;
     z-index: 2;
   }
-
-  .nav_main a {
-    height: 110px;
-    opacity: 0.75;
+  .nav_mobile .nav_menu a:active {
+    color: #838d97;
   }
-  .nav_main h1 {
-    background-image: none;
-    font-size: 2.5rem;
+
+  .nav_main #arriba a {
+    height: 0;
+  }
+  .nav_main #arriba a h1 {
+    background: none;
+    padding-top: 0;
+    margin: 90px 0;
+    font-size: 2.7rem;
+    width: 100%;
     height: auto;
-    margin: 0;
-    padding: 0;
   }
   .nav_main ul {
     display: none;
