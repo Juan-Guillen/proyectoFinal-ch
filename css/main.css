@@ -171,21 +171,18 @@ form .f1 label {
   display: block;
 }
 form .f1 input {
-  width: 80%;
-  min-width: 200px;
-}
-form .f1 input + input {
-  max-width: 200px;
+  width: 200px;
 }
 form .f1 .btn {
   max-width: 255px;
   margin: auto;
   display: block;
 }
-form textarea {
+form .f1 textarea {
   margin-top: 30px;
   width: 80%;
-  min-width: 200px;
+  width: 250px;
+  font-size: 1rem;
 }
 
 /*acerca de*/
@@ -336,21 +333,18 @@ body .container1 .carousel {
     display: block;
   }
   body form .f1 input {
-    width: 80%;
-    min-width: 200px;
-  }
-  body form .f1 input + input {
-    max-width: 200px;
+    width: 200px;
   }
   body form .f1 .btn {
     max-width: 255px;
     margin: auto;
     display: block;
   }
-  body form textarea {
+  body form .f1 textarea {
     margin-top: 30px;
     width: 80%;
-    min-width: 200px;
+    width: 250px;
+    font-size: 1rem;
   }
 
   .nav_mobile {
