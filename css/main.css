@@ -96,10 +96,12 @@ nav ul li a:hover {
   position: absolute;
   top: 120px;
   width: 15%;
+  min-width: 225px;
   left: 42%;
-  background: black;
+  background-color: transparent;
   z-index: 1;
   overflow: hidden;
+  border-radius: 10px;
 }
 #submenu li {
   display: none;
@@ -374,7 +376,7 @@ body .container1 .carousel {
     position: relative;
     background-color: rgba(53, 50, 50, 0.75);
     border-radius: 10px;
-    width: 50vw;
+    width: 225px;
     margin: auto;
     z-index: 2;
   }
@@ -386,6 +388,9 @@ body .container1 .carousel {
   }
   .nav_mobile .nav_menu a:active {
     color: #838d97;
+    background-color: #dedede;
+    transform: translateY(3px);
+    border-radius: 10px;
   }
 
   .nav_main #arriba a {

@@ -108,10 +108,13 @@ nav ul {
     position: absolute;
     top: 120px;
     width: 15%;
+    min-width: 225px;
     left: 42%;
-    background: black;
+    background-color: transparent;
     z-index: 1;
     overflow: hidden;
+    border-radius: 10px;
+    
     li {
         display: none;
         justify-self: center;
@@ -428,10 +431,11 @@ form {
             position: relative;
             background-color: rgba(53, 50, 50, .75);
             border-radius: 10px;
-            width: 50vw;
+            width: 225px;
             margin: auto;
             z-index: 2;
-    
+            
+
             a {
                 text-decoration: none;
                 color: #efefef;
@@ -439,6 +443,9 @@ form {
                 z-index: 2;
                 &:active {
                     color: #838d97;
+                    background-color: #dedede;
+                    transform: translateY(3px);
+                    border-radius: 10px;
                 }
             }
         }
